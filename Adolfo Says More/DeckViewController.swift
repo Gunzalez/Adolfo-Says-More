@@ -34,9 +34,7 @@ class DeckViewController: UIViewController {
         
         if (segue.identifier == "showCard") {
             
-            var navController = segue.destinationViewController as! UINavigationController
-            
-            var viewController = navController.topViewController as! CardViewController
+            var viewController = segue.destinationViewController as! CardViewController
             
             viewController.card = card
             
