@@ -9,6 +9,15 @@
 import UIKit
 
 class ItemViewController: UIViewController {
+    
+    
+    
+    
+    @IBAction func cancelButtonPressed(sender: AnyObject) {
+        
+        self.dismissViewControllerAnimated(true, completion: {});
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
