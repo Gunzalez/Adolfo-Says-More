@@ -19,6 +19,7 @@
 		6F584B531B44BD89007B9D54 /* icon-cards.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F584B4E1B44BD89007B9D54 /* icon-cards.png */; };
 		6F584B541B44BD89007B9D54 /* icon-list.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F584B4F1B44BD89007B9D54 /* icon-list.png */; };
 		6F584B551B44BD89007B9D54 /* icon-settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F584B501B44BD89007B9D54 /* icon-settings.png */; };
+		6F584B571B44C0E1007B9D54 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F584B561B44C0E1007B9D54 /* CardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		6F584B4E1B44BD89007B9D54 /* icon-cards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-cards.png"; sourceTree = "<group>"; };
 		6F584B4F1B44BD89007B9D54 /* icon-list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-list.png"; sourceTree = "<group>"; };
 		6F584B501B44BD89007B9D54 /* icon-settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-settings.png"; sourceTree = "<group>"; };
+		6F584B561B44C0E1007B9D54 /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			children = (
 				6F584B4B1B44BD56007B9D54 /* Images */,
 				6F584B291B44BD37007B9D54 /* AppDelegate.swift */,
+				6F584B561B44C0E1007B9D54 /* CardViewController.swift */,
 				6F584B2B1B44BD37007B9D54 /* DeckViewController.swift */,
 				6F584B2D1B44BD37007B9D54 /* ListViewController.swift */,
 				6F584B2F1B44BD37007B9D54 /* Main.storyboard */,
@@ -243,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F584B571B44C0E1007B9D54 /* CardViewController.swift in Sources */,
 				6F584B2E1B44BD37007B9D54 /* ListViewController.swift in Sources */,
 				6F584B2A1B44BD37007B9D54 /* AppDelegate.swift in Sources */,
 				6F584B2C1B44BD37007B9D54 /* DeckViewController.swift in Sources */,
