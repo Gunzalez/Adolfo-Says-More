@@ -58,8 +58,6 @@ class CardViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
-//        modalTransitionStyle = .FlipHorizontal
    
         cardLabel.text = card
         

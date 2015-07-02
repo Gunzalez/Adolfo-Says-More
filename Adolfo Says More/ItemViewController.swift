@@ -8,37 +8,138 @@
 
 import UIKit
 
-class ItemViewController: UIViewController {
+class ItemViewController: UIViewController, UITextFieldDelegate {
+    
+    var meaningIndex: Int!
+    
+    var maxChar: Int = 90
+    
+    
+    
+    @IBOutlet var charCountLabel: UILabel!
+    
+    @IBOutlet var textField: UITextField!
+    
+    @IBOutlet var previewLabel: UILabel!
+    
+    
     
     
     
     
     @IBAction func cancelButtonPressed(sender: AnyObject) {
         
+        self.dismissScreen()
+        
+    }
+    
+    
+    func dismissScreen(){
+    
+        textField.resignFirstResponder()
+    
         self.dismissViewControllerAnimated(true, completion: {});
+    
+    }
+    
+    
+    
+
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
+        
+        self.textField.delegate = self
+        
+        self.textField.becomeFirstResponder()
+        
+        charCountLabel.text = String(maxChar)
+        
+        if meaningIndex != nil {
+
+            var textToShow = adolfoMeans[meaningIndex][0]
+
+            textField.text = textToShow
+
+            previewLabel.text = textToShow
+
+            charCountLabel.text = String(maxChar - count(textToShow))
+           
+        }
         
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
     override func didReceiveMemoryWarning() {
+        
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+   
+    
+    @IBAction func keyboardPressed(sender: AnyObject) {
+        
+        previewLabel.text = textField.text
+        
+        charCountLabel.text = String(maxChar - count(textField.text!))
+        
     }
-    */
+    
+    
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        
+        let newLength = count(textField.text.utf16) + count(string.utf16) - range.length
+        
+        return newLength <= maxChar
+        
+    }
+    
+    
+    func saveData(){
+        
+        var newMeaning: String = textField.text!
+        
+        var newString = newMeaning.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+        
+        if count(newString) > 1 {
+            
+            var singleMeaning: Array = [String]()
+            
+            singleMeaning.append(newString)
+            
+            if meaningIndex != nil {
+                
+                singleMeaning.append(adolfoMeans[meaningIndex][1])
+                
+                adolfoMeans[meaningIndex] = singleMeaning
+                
+            } else {
+                
+                
+                singleMeaning.append("no")
+                
+                adolfoMeans.append(singleMeaning)
+                
+            }
+            
+            NSUserDefaults.standardUserDefaults().setObject(adolfoMeans, forKey: "adolfoMeans");
+            
+        }
+        
+    }
+
+
+    
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        
+        saveData();
+        
+        dismissScreen()
+        
+        return true
+        
+    }
 
 }

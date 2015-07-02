@@ -9,37 +9,39 @@
 import UIKit
 
 class ListViewController: UITableViewController {
+    
+    
+    @IBOutlet var addBarItem: UIBarButtonItem!
+    
+    
+    
+    
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
+        
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
-
-    // MARK: - Table view data source
+    
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Potentially incomplete method implementation.
-        // Return the number of sections.
+        
         return 1
     }
+    
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
         return adolfoMeans.count
     
     }
-    
-    
+
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
@@ -61,64 +63,70 @@ class ListViewController: UITableViewController {
         
     }
     
-//    
-//    override func viewDidAppear(animated: Bool) {
-//        
-//        if adolfoMeans.count >= maxMeaning {
-//            
-//            self.newBarButton.enabled = false
-//            
-//        } else {
-//            
-//            self.newBarButton.enabled = true
-//            
-//        }
-//        
-//        tableList.reloadData()
-//        
-//    }
     
     
-//    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-//        
-//        if (editingStyle == UITableViewCellEditingStyle.Delete) {
-//            
-//            adolfoMeans.removeAtIndex(indexPath.row)
-//            
-//            NSUserDefaults.standardUserDefaults().setObject(adolfoMeans, forKey: "adolfoMeans");
-//            
-//            if adolfoMeans.count >= maxMeaning {
-//                
-//                self.newBarButton.enabled = false
-//                
-//            } else {
-//                
-//                self.newBarButton.enabled = true
-//                
-//            }
-//            
-//            tableList.reloadData()
-//            
-//        }
-//    }
-
-    /*
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell
-
-        // Configure the cell...
-
-        return cell
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if (segue.identifier == "editItem") {
+            
+            var navController = segue.destinationViewController as! UINavigationController
+            
+            var viewController = navController.topViewController as! ItemViewController
+            
+            var selectedIndex = self.tableView.indexPathForCell(sender as! UITableViewCell)
+            
+            viewController.meaningIndex = selectedIndex!.row
+            
+            viewController.navigationItem.title = "Edit"
+            
+        }
+        
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the specified item to be editable.
-        return true
+    
+    
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        if adolfoMeans.count >= maxMeaning {
+            
+            self.addBarItem.enabled = false
+            
+        } else {
+            
+            self.addBarItem.enabled = true
+            
+        }
+        
+        self.tableView.reloadData()
+        
     }
-    */
+    
+    
+    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        if (editingStyle == UITableViewCellEditingStyle.Delete) {
+            
+            adolfoMeans.removeAtIndex(indexPath.row)
+            
+            NSUserDefaults.standardUserDefaults().setObject(adolfoMeans, forKey: "adolfoMeans");
+            
+            if adolfoMeans.count >= maxMeaning {
+                
+                self.addBarItem.enabled = false
+                
+            } else {
+                
+                self.addBarItem.enabled = true
+                
+            }
+            
+            self.tableView.reloadData()
+            
+        }
+    }
+
+
 
     /*
     // Override to support editing the table view.
@@ -132,29 +140,8 @@ class ListViewController: UITableViewController {
     }
     */
 
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
+    
+    
 
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

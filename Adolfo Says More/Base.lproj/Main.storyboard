@@ -238,18 +238,21 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="What he really means..." id="iOQ-m9-5Sq">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="lbj-tg-HrL">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="add" id="lbj-tg-HrL">
                             <connections>
                                 <segue destination="DLY-Xn-bKu" kind="presentation" identifier="addItem" id="cB4-4f-S1x"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addBarItem" destination="lbj-tg-HrL" id="v0K-EP-cWJ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kfv-QS-Ic1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2092.5" y="-103.5"/>
         </scene>
-        <!--Add new-->
+        <!--Add-->
         <scene sceneID="Skb-8L-hDf">
             <objects>
                 <viewController id="RGc-Qo-i7h" customClass="ItemViewController" customModule="Adolfo_Says_More" customModuleProvider="target" sceneMemberID="viewController">
@@ -261,27 +264,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hb4-Ag-xly">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hb4-Ag-xly">
                                 <rect key="frame" x="40" y="65" width="295" height="223"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="90" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOI-dm-Acn">
+                                <rect key="frame" x="24" y="330" width="20" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ydc-g1-kuZ">
-                                <rect key="frame" x="51" y="366" width="252" height="30"/>
+                                <rect key="frame" x="24" y="359" width="335" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="light" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="keyboardPressed:" destination="RGc-Qo-i7h" eventType="editingChanged" id="x5g-B1-Gcf"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Add new" id="N6i-ds-86q">
+                    <navigationItem key="navigationItem" title="Add" id="N6i-ds-86q">
                         <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="38H-GP-5Fu">
                             <connections>
                                 <action selector="cancelButtonPressed:" destination="RGc-Qo-i7h" id="cW6-Hw-XAT"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="charCountLabel" destination="NOI-dm-Acn" id="rh6-yN-erp"/>
+                        <outlet property="previewLabel" destination="hb4-Ag-xly" id="zfa-gS-cIc"/>
+                        <outlet property="textField" destination="Ydc-g1-kuZ" id="mbt-Xy-rMh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oMi-0m-9aK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
