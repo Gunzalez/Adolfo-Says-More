@@ -12,7 +12,7 @@ class CardViewController: UIViewController {
     
     var card: String!
     
-    var hideOverride = "Need to find a way to select override adolfo meaning"
+    var hideOverride = defaultMeans
     
     var tempMeaning: String!
     
@@ -64,6 +64,8 @@ class CardViewController: UIViewController {
         var favourites = [Array<String>]()
         
         if adolfoMeans.count > 0 {
+            
+            hideOverride = adolfoMeans[0][0]
             
             for singleMeaning in adolfoMeans {
                 

@@ -13,13 +13,16 @@ class ListViewController: UITableViewController {
     
     @IBOutlet var addBarItem: UIBarButtonItem!
     
-    
-    
-    
 
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        var longPress = UILongPressGestureRecognizer(target: self, action: "action:")
+        
+        longPress.minimumPressDuration = 0.5
+        
+        tableView.addGestureRecognizer(longPress)
 
     }
 
@@ -60,6 +63,37 @@ class ListViewController: UITableViewController {
         }
         
         return cell
+        
+    }
+    
+    
+    func action(gestureRecognizer:UIGestureRecognizer) {
+        
+        if ( gestureRecognizer.state == UIGestureRecognizerState.Began ){
+            
+            var touchPoint = gestureRecognizer.locationInView(self.tableView)
+            
+            var indexPath = tableView.indexPathForRowAtPoint(touchPoint)
+            
+            if indexPath != nil {
+                
+                if adolfoMeans[indexPath!.row][1] == "yes" {
+                    
+                    adolfoMeans[indexPath!.row][1] = "no"
+                    
+                } else {
+                    
+                    adolfoMeans[indexPath!.row][1] = "yes"
+                    
+                }
+                
+                NSUserDefaults.standardUserDefaults().setObject(adolfoMeans, forKey: "adolfoMeans");
+                
+                tableView.reloadData()
+                
+            }
+            
+        }
         
     }
     
