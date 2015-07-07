@@ -16,23 +16,27 @@ class CardViewController: UIViewController {
     
     var tempMeaning: String!
     
-    var isCloaked: Bool = false
-    
     @IBOutlet var cardLabel: UILabel!
     
     @IBOutlet var meansLabel: UILabel!
     
+    @IBOutlet var bailButton: UIButton!
+    
     @IBAction func bailOutButtonPressed(sender: AnyObject) {
         
-        isCloaked = !isCloaked
+        var textOfButtonPressed = bailButton.titleLabel!.text
         
-        if isCloaked {
+        if textOfButtonPressed == "Hide" {
+            
+            bailButton.setTitle("Show", forState: UIControlState.Normal)
             
             meansLabel.text = replaceStoryPoints(hideOverride)
             
         } else {
             
             meansLabel.text = replaceStoryPoints(tempMeaning)
+            
+            bailButton.setTitle("Hide", forState: UIControlState.Normal)
         }
         
     }
@@ -93,6 +97,8 @@ class CardViewController: UIViewController {
         } else {
             
             meansLabel.text = replaceStoryPoints(defaultMeans)
+            
+            tempMeaning = defaultMeans
             
         }
         

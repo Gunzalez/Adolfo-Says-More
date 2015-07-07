@@ -18,7 +18,6 @@ class DeckViewController: UIViewController {
     
     var card: String!
     
-    
     @IBAction func cardTapped(sender: AnyObject) {
         
         var button = sender as! UIButton
