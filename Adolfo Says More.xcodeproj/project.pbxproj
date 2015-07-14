@@ -21,6 +21,9 @@
 		6F584B571B44C0E1007B9D54 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F584B561B44C0E1007B9D54 /* CardViewController.swift */; };
 		6F584B5B1B45C646007B9D54 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F584B5A1B45C646007B9D54 /* ListViewController.swift */; };
 		6F584B5D1B45CD5C007B9D54 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F584B5C1B45CD5C007B9D54 /* ItemViewController.swift */; };
+		6F70A5EE1B559A1400F7FF18 /* adolfo-day.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F70A5EC1B559A1400F7FF18 /* adolfo-day.png */; };
+		6F70A5EF1B559A1400F7FF18 /* adolfo-night.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F70A5ED1B559A1400F7FF18 /* adolfo-night.png */; };
+		6F70A5F11B559B1200F7FF18 /* MeetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F70A5F01B559B1200F7FF18 /* MeetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,9 @@
 		6F584B561B44C0E1007B9D54 /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		6F584B5A1B45C646007B9D54 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		6F584B5C1B45CD5C007B9D54 /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		6F70A5EC1B559A1400F7FF18 /* adolfo-day.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "adolfo-day.png"; sourceTree = "<group>"; };
+		6F70A5ED1B559A1400F7FF18 /* adolfo-night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "adolfo-night.png"; sourceTree = "<group>"; };
+		6F70A5F01B559B1200F7FF18 /* MeetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 				6F584B2B1B44BD37007B9D54 /* DeckViewController.swift */,
 				6F584B5C1B45CD5C007B9D54 /* ItemViewController.swift */,
 				6F584B5A1B45C646007B9D54 /* ListViewController.swift */,
+				6F70A5F01B559B1200F7FF18 /* MeetViewController.swift */,
 				6F584B2F1B44BD37007B9D54 /* Main.storyboard */,
 				6F584B321B44BD37007B9D54 /* Images.xcassets */,
 				6F584B341B44BD37007B9D54 /* LaunchScreen.xib */,
@@ -135,6 +142,8 @@
 		6F584B4B1B44BD56007B9D54 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				6F70A5EC1B559A1400F7FF18 /* adolfo-day.png */,
+				6F70A5ED1B559A1400F7FF18 /* adolfo-night.png */,
 				6F584B4C1B44BD89007B9D54 /* icon-about.png */,
 				6F584B4D1B44BD89007B9D54 /* icon-adolfo.png */,
 				6F584B4E1B44BD89007B9D54 /* icon-cards.png */,
@@ -230,8 +239,10 @@
 				6F584B551B44BD89007B9D54 /* icon-settings.png in Resources */,
 				6F584B511B44BD89007B9D54 /* icon-about.png in Resources */,
 				6F584B531B44BD89007B9D54 /* icon-cards.png in Resources */,
+				6F70A5EE1B559A1400F7FF18 /* adolfo-day.png in Resources */,
 				6F584B331B44BD37007B9D54 /* Images.xcassets in Resources */,
 				6F584B541B44BD89007B9D54 /* icon-list.png in Resources */,
+				6F70A5EF1B559A1400F7FF18 /* adolfo-night.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F584B571B44C0E1007B9D54 /* CardViewController.swift in Sources */,
+				6F70A5F11B559B1200F7FF18 /* MeetViewController.swift in Sources */,
 				6F584B2A1B44BD37007B9D54 /* AppDelegate.swift in Sources */,
 				6F584B5D1B45CD5C007B9D54 /* ItemViewController.swift in Sources */,
 				6F584B5B1B45C646007B9D54 /* ListViewController.swift in Sources */,
@@ -449,6 +461,7 @@
 				6F584B471B44BD37007B9D54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6F584B481B44BD37007B9D54 /* Build configuration list for PBXNativeTarget "Adolfo Says MoreTests" */ = {
 			isa = XCConfigurationList;
@@ -457,6 +470,7 @@
 				6F584B4A1B44BD37007B9D54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -14,17 +14,11 @@ class ItemViewController: UIViewController, UITextFieldDelegate {
     
     var maxChar: Int = 90
     
-    
-    
     @IBOutlet var charCountLabel: UILabel!
     
     @IBOutlet var textField: UITextField!
     
     @IBOutlet var previewLabel: UILabel!
-    
-    
-    
-    
     
     
     @IBAction func cancelButtonPressed(sender: AnyObject) {
@@ -33,7 +27,6 @@ class ItemViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-    
     func dismissScreen(){
     
         textField.resignFirstResponder()
@@ -41,9 +34,6 @@ class ItemViewController: UIViewController, UITextFieldDelegate {
         self.dismissViewControllerAnimated(true, completion: {});
     
     }
-    
-    
-    
 
     override func viewDidLoad() {
         
