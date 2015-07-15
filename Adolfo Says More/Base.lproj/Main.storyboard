@@ -398,7 +398,7 @@
             </objects>
             <point key="canvasLocation" x="2270.5" y="983.5"/>
         </scene>
-        <!--Adolfo by day...-->
+        <!--Adolfo by day-->
         <scene sceneID="cdn-YX-A59">
             <objects>
                 <viewController id="h27-UF-s9E" customClass="MeetViewController" customModule="Adolfo_Says_More" customModuleProvider="target" sceneMemberID="viewController">
@@ -413,7 +413,7 @@
                             <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="adolfo-day.png" translatesAutoresizingMaskIntoConstraints="NO" id="FF1-mP-NfW">
                                 <rect key="frame" x="-3" y="64" width="381" height="554"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Monday to Thursday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaH-5k-13G">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Monday to Thursday..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaH-5k-13G">
                                 <rect key="frame" x="0.0" y="74" width="375" height="46"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="29"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -422,7 +422,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Adolfo by day..." id="UZ6-dt-kG8"/>
+                    <navigationItem key="navigationItem" title="Adolfo by day" id="UZ6-dt-kG8"/>
                     <connections>
                         <outlet property="imageView" destination="FF1-mP-NfW" id="aWs-Pd-ctF"/>
                         <outlet property="sloganLabel" destination="PaH-5k-13G" id="bqH-hr-JSf"/>

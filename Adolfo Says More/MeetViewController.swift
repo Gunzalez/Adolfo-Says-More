@@ -31,14 +31,14 @@ class MeetViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        state["title"] = "Adolfo in the week"
+        state["title"] = "Adolfo by day"
         state["image"] = "adolfo-day.png"
-        state["slogan"] = "Monday to Thursday"
+        state["slogan"] = "Monday to Thursday..."
         stateList.append(state)
         
-        state["title"] = "Adolfo at weekend"
+        state["title"] = "Adolfo at night"
         state["image"] = "adolfo-night.png"
-        state["slogan"] = "Then on Friday"
+        state["slogan"] = "...but then on Friday"
         stateList.append(state)
         
         var swipeRight = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
@@ -56,21 +56,18 @@ class MeetViewController: UIViewController {
         
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             
-            setNextImage()
-            
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.Right:
                 
-                imageView.image = UIImage(named: stateToShow["image"]!)
-                self.title = stateToShow["title"]
-                self.sloganLabel.text = stateToShow["slogan"]
-                //println("Swiped right")
+                imageView.image = UIImage(named: stateList[0]["image"]!)
+                self.sloganLabel.text = stateList[0]["slogan"]
+                self.navigationItem.title = stateList[0]["title"]
                 
             case UISwipeGestureRecognizerDirection.Left:
                 
-                imageView.image = UIImage(named: stateToShow["image"]!)
-                self.title = stateToShow["title"]
-                self.sloganLabel.text = stateToShow["slogan"]
+                imageView.image = UIImage(named: stateList[1]["image"]!)
+                self.sloganLabel.text = stateList[1]["slogan"]
+                self.navigationItem.title = stateList[1]["title"]
                 
             default:
                 break
@@ -79,24 +76,5 @@ class MeetViewController: UIViewController {
         
         
     }
-    
-    func setNextImage(){
-        
-        if currentState == 0 {
-            
-            currentState = 1
-            
-        } else if currentState == 1 {
-            
-            currentState = 0
-        }
-            
-        stateToShow["title"] = stateList[currentState]["title"]
-        stateToShow["image"] = stateList[currentState]["image"]
-        stateToShow["slogan"] = stateList[currentState]["slogan"]
-        
-    }
-    
-    
 
 }

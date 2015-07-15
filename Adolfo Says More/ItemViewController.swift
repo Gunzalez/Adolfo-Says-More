@@ -106,8 +106,7 @@ class ItemViewController: UIViewController, UITextFieldDelegate {
                 
             } else {
                 
-                
-                singleMeaning.append("no")
+                singleMeaning.append("yes")
                 
                 adolfoMeans.append(singleMeaning)
                 
