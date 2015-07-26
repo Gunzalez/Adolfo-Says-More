@@ -16,13 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Adolfo Says" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYo-4E-Gmu">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Adolfo Says" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYo-4E-Gmu">
                                 <rect key="frame" x="16" y="49" width="343" height="46"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="29"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fun Scrum Poker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Wy-lI-Kce">
-                                <rect key="frame" x="16" y="102" width="343" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pick a card, any card..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Wy-lI-Kce">
+                                <rect key="frame" x="16" y="102" width="343" height="28"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="23"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -344,33 +344,6 @@
             </objects>
             <point key="canvasLocation" x="3238.5" y="-103.5"/>
         </scene>
-        <!--Settings-->
-        <scene sceneID="eDj-oS-odU">
-            <objects>
-                <viewController id="5fg-eb-4S5" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="0wi-D2-4BS"/>
-                        <viewControllerLayoutGuide type="bottom" id="tr4-mT-Vc9"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="eS0-bd-sHK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b4n-Bs-drT">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="App Settings" id="5br-Gn-L86"/>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" red="0.96857244318181823" green="0.96857244318181823" blue="0.96857244318181823" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="icon-settings.png" id="i6a-Sc-5Mm"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XPj-NN-aK4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2857.5" y="983.5"/>
-        </scene>
         <!--Adolfo by day-->
         <scene sceneID="cdn-YX-A59">
             <objects>
@@ -405,6 +378,45 @@
             </objects>
             <point key="canvasLocation" x="2057.5" y="683.5"/>
         </scene>
+        <!--Adolfo settings-->
+        <scene sceneID="EVK-2V-hxd">
+            <objects>
+                <tableViewController id="IPU-eu-HES" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="zCi-HQ-uqL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Swapping lists" id="n79-dp-X2v">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="kER-bh-2ON" rowHeight="72" style="IBUITableViewCellStyleDefault" id="QcL-Op-8yg">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QcL-Op-8yg" id="EcV-mg-j6t">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="This app uses Bluetooth to swap Adolfo lists, make sure this is set to On." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kER-bh-2ON">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="IPU-eu-HES" id="dz1-ro-Ze3"/>
+                            <outlet property="delegate" destination="IPU-eu-HES" id="0QO-5f-fre"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Adolfo settings" id="bnK-Bq-cYi"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Max-uC-ThZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1835.5" y="1554.5"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
@@ -421,14 +433,14 @@
                         <segue destination="bMR-NK-gRI" kind="relationship" relationship="viewControllers" id="1Vp-kO-8Bt"/>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="d0M-GQ-PCN" kind="relationship" relationship="viewControllers" id="hQw-KT-ISM"/>
-                        <segue destination="5fg-eb-4S5" kind="relationship" relationship="viewControllers" id="CQI-7e-Pgm"/>
+                        <segue destination="U34-gk-YgF" kind="relationship" relationship="viewControllers" id="a83-26-dCG"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7.5" y="143.5"/>
         </scene>
-        <!--How To Play-->
+        <!--How to play-->
         <scene sceneID="B0e-xQ-rS9">
             <objects>
                 <tableViewController id="LWh-73-Aax" sceneMemberID="viewController">
@@ -464,12 +476,30 @@
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PYq-fn-Fuz">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <string key="text">The list section displays all entries for what Adolfo really means. 
+                                                    <string key="text">The 'List' section displays all entries for what Adolfo really means. 
 
 - Add new ones with the + button
 - Tap an existing row once to edit
 - Long press to include on card screen
 - Swipe left on a row to delete</string>
+                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Adolfo goes social" id="CiY-Ra-HNM">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="knz-qt-SId" rowHeight="82" style="IBUITableViewCellStyleDefault" id="pvI-Bd-OZF">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pvI-Bd-OZF" id="W98-D6-tD9">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Use the 'Settings' section to swap lists of what Adolfo really thinks with your friends who also have this app" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="knz-qt-SId">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -485,7 +515,7 @@
                             <outlet property="delegate" destination="LWh-73-Aax" id="PM9-yA-n2F"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="How To Play" id="ciL-db-hjY"/>
+                    <navigationItem key="navigationItem" title="How to play" id="ciL-db-hjY"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mg6-FA-gxE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -565,6 +595,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="euZ-qB-bQP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="119.5" y="927.5"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="Srz-op-9c3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="U34-gk-YgF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="icon-settings.png" id="SJl-jR-chf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uau-5M-19t">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="IPU-eu-HES" kind="relationship" relationship="rootViewController" id="tgY-Fb-15S"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fRa-k3-gGL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1248.5" y="1554.5"/>
         </scene>
     </scenes>
     <resources>
