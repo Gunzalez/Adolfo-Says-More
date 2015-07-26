@@ -344,33 +344,6 @@
             </objects>
             <point key="canvasLocation" x="3238.5" y="-103.5"/>
         </scene>
-        <!--Instructions-->
-        <scene sceneID="NWd-Du-5xk">
-            <objects>
-                <viewController id="MQD-V0-2HZ" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="28G-ld-0hV"/>
-                        <viewControllerLayoutGuide type="bottom" id="EpC-px-mx0"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="cIl-S3-Did">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T0U-fN-KfK">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="Instructions" id="mdJ-71-CeZ"/>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" red="0.97383996212121215" green="0.97383996212121215" blue="0.97383996212121215" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Instructions" image="icon-about.png" id="0v8-gH-tAP"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eAD-9a-Lnj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="253.5" y="1157.5"/>
-        </scene>
         <!--Settings-->
         <scene sceneID="eDj-oS-odU">
             <objects>
@@ -396,7 +369,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XPj-NN-aK4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2270.5" y="983.5"/>
+            <point key="canvasLocation" x="2857.5" y="983.5"/>
         </scene>
         <!--Adolfo by day-->
         <scene sceneID="cdn-YX-A59">
@@ -413,7 +386,7 @@
                             <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="adolfo-day.png" translatesAutoresizingMaskIntoConstraints="NO" id="FF1-mP-NfW">
                                 <rect key="frame" x="-3" y="64" width="381" height="554"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Monday to Thursday..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaH-5k-13G">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Monday to Thursday..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaH-5k-13G">
                                 <rect key="frame" x="0.0" y="74" width="375" height="46"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="29"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -430,7 +403,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x6y-zn-qBp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1470.5" y="683.5"/>
+            <point key="canvasLocation" x="2057.5" y="683.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -444,16 +417,79 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="MQD-V0-2HZ" kind="relationship" relationship="viewControllers" id="upf-TJ-D6w"/>
                         <segue destination="uA6-ne-KVN" kind="relationship" relationship="viewControllers" id="nQG-et-lhU"/>
+                        <segue destination="bMR-NK-gRI" kind="relationship" relationship="viewControllers" id="1Vp-kO-8Bt"/>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="5fg-eb-4S5" kind="relationship" relationship="viewControllers" id="CQI-7e-Pgm"/>
                         <segue destination="d0M-GQ-PCN" kind="relationship" relationship="viewControllers" id="hQw-KT-ISM"/>
+                        <segue destination="5fg-eb-4S5" kind="relationship" relationship="viewControllers" id="CQI-7e-Pgm"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7.5" y="143.5"/>
+        </scene>
+        <!--How To Play-->
+        <scene sceneID="B0e-xQ-rS9">
+            <objects>
+                <tableViewController id="LWh-73-Aax" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Gzp-7d-601">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Pick a card, any card..." id="VrG-HM-Ipy">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="qpE-vn-3a1" rowHeight="80" style="IBUITableViewCellStyleDefault" id="zg2-hD-eou">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zg2-hD-eou" id="g2p-3b-BZe">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="In the 'Deck' section, simple tap on a number, this flips the card for what Adolfo says, and reveals what he really thinks." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qpE-vn-3a1">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="What Adolfo thinks" id="afw-Bg-PS2">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="PYq-fn-Fuz" rowHeight="167" style="IBUITableViewCellStyleDefault" id="rKG-cL-6rD">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rKG-cL-6rD" id="JV4-QG-PLm">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PYq-fn-Fuz">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">The list section displays all entries for what Adolfo really means. 
+
+- Add new ones with the + button
+- Tap an existing row once to edit
+- Long press to include on card screen
+- Swipe left on a row to delete</string>
+                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="LWh-73-Aax" id="BLb-Vs-Ga4"/>
+                            <outlet property="delegate" destination="LWh-73-Aax" id="PM9-yA-n2F"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="How To Play" id="ciL-db-hjY"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mg6-FA-gxE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="706.5" y="927.5"/>
         </scene>
         <!--List-->
         <scene sceneID="bb4-SA-KaE">
@@ -509,7 +545,26 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BHW-dE-IcK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="883.5" y="683.5"/>
+            <point key="canvasLocation" x="1470.5" y="683.5"/>
+        </scene>
+        <!--Instructions-->
+        <scene sceneID="ccw-fn-IBA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bMR-NK-gRI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Instructions" image="icon-about.png" id="Msq-wB-UdT"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="z0f-rC-8kU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LWh-73-Aax" kind="relationship" relationship="rootViewController" id="O0r-NU-21e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="euZ-qB-bQP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119.5" y="927.5"/>
         </scene>
     </scenes>
     <resources>
