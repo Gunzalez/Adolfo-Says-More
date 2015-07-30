@@ -7,7 +7,7 @@
         <!--Deck-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="DeckViewController" customModule="Adolfo_Says_More" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="DeckViewController" customModule="Adolfo_Says" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -147,7 +147,7 @@
         <!--Card View Controller-->
         <scene sceneID="RVu-lS-0gQ">
             <objects>
-                <viewController id="Xix-Mx-boG" customClass="CardViewController" customModule="Adolfo_Says_More" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Xix-Mx-boG" customClass="CardViewController" customModule="Adolfo_Says" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2oS-w5-MRa"/>
                         <viewControllerLayoutGuide type="bottom" id="wuP-vY-ehb"/>
@@ -232,7 +232,7 @@
         <!--What he really thinks-->
         <scene sceneID="Hga-gj-ULs">
             <objects>
-                <tableViewController id="IYe-WS-Cgm" customClass="ListViewController" customModule="Adolfo_Says_More" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="IYe-WS-Cgm" customClass="ListViewController" customModule="Adolfo_Says" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="JrT-IM-u20">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -272,7 +272,7 @@
         <!--Add-->
         <scene sceneID="Skb-8L-hDf">
             <objects>
-                <viewController id="RGc-Qo-i7h" customClass="ItemViewController" customModule="Adolfo_Says_More" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="RGc-Qo-i7h" customClass="ItemViewController" customModule="Adolfo_Says" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OtT-EN-Iko"/>
                         <viewControllerLayoutGuide type="bottom" id="7Ub-SK-NFs"/>
@@ -299,13 +299,13 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="90" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOI-dm-Acn">
-                                <rect key="frame" x="16" y="342" width="20" height="21"/>
+                                <rect key="frame" x="16" y="339" width="20" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="character limit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPM-wj-xiX">
-                                <rect key="frame" x="44" y="342" width="110" height="21"/>
+                                <rect key="frame" x="44" y="339" width="110" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -317,8 +317,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ydc-g1-kuZ">
-                                <rect key="frame" x="16" y="371" width="343" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <rect key="frame" x="16" y="368" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="light" returnKeyType="done"/>
                                 <connections>
                                     <action selector="keyboardPressed:" destination="RGc-Qo-i7h" eventType="editingChanged" id="x5g-B1-Gcf"/>
@@ -347,7 +347,7 @@
         <!--Adolfo by day-->
         <scene sceneID="cdn-YX-A59">
             <objects>
-                <viewController id="h27-UF-s9E" customClass="MeetViewController" customModule="Adolfo_Says_More" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="h27-UF-s9E" customClass="MeetViewController" customModule="Adolfo_Says" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KQv-Kl-MFG"/>
                         <viewControllerLayoutGuide type="bottom" id="vax-eq-acb"/>
