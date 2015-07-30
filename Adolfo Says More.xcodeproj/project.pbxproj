@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6F584B241B44BD37007B9D54 /* Adolfo Says More.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adolfo Says More.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F584B241B44BD37007B9D54 /* Adolfo Says.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adolfo Says.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F584B281B44BD37007B9D54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F584B291B44BD37007B9D54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F584B2B1B44BD37007B9D54 /* DeckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckViewController.swift; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 		6F584B251B44BD37007B9D54 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6F584B241B44BD37007B9D54 /* Adolfo Says More.app */,
+				6F584B241B44BD37007B9D54 /* Adolfo Says.app */,
 				6F584B3B1B44BD37007B9D54 /* Adolfo Says MoreTests.xctest */,
 			);
 			name = Products;
@@ -170,7 +170,7 @@
 			);
 			name = "Adolfo Says More";
 			productName = "Adolfo Says More";
-			productReference = 6F584B241B44BD37007B9D54 /* Adolfo Says More.app */;
+			productReference = 6F584B241B44BD37007B9D54 /* Adolfo Says.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6F584B3A1B44BD37007B9D54 /* Adolfo Says MoreTests */ = {
@@ -394,7 +394,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Adolfo Says More/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Adolfo Says";
 			};
 			name = Debug;
 		};
@@ -404,7 +404,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Adolfo Says More/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Adolfo Says";
 			};
 			name = Release;
 		};
