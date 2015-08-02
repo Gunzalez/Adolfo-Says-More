@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F1AAFE71B6E942B003BC6E1 /* scrum-poker.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6F1AAFE61B6E942B003BC6E1 /* scrum-poker.jpg */; };
 		6F584B2A1B44BD37007B9D54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F584B291B44BD37007B9D54 /* AppDelegate.swift */; };
 		6F584B2C1B44BD37007B9D54 /* DeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F584B2B1B44BD37007B9D54 /* DeckViewController.swift */; };
 		6F584B311B44BD37007B9D54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F584B2F1B44BD37007B9D54 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6F1AAFE61B6E942B003BC6E1 /* scrum-poker.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "scrum-poker.jpg"; sourceTree = "<group>"; };
 		6F584B241B44BD37007B9D54 /* Adolfo Says.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adolfo Says.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F584B281B44BD37007B9D54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F584B291B44BD37007B9D54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 		6F584B4B1B44BD56007B9D54 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				6F1AAFE61B6E942B003BC6E1 /* scrum-poker.jpg */,
 				6F70A5EC1B559A1400F7FF18 /* adolfo-day.png */,
 				6F70A5ED1B559A1400F7FF18 /* adolfo-night.png */,
 				6F584B4C1B44BD89007B9D54 /* icon-about.png */,
@@ -238,6 +241,7 @@
 				6F584B361B44BD37007B9D54 /* LaunchScreen.xib in Resources */,
 				6F584B551B44BD89007B9D54 /* icon-settings.png in Resources */,
 				6F584B511B44BD89007B9D54 /* icon-about.png in Resources */,
+				6F1AAFE71B6E942B003BC6E1 /* scrum-poker.jpg in Resources */,
 				6F584B531B44BD89007B9D54 /* icon-cards.png in Resources */,
 				6F70A5EE1B559A1400F7FF18 /* adolfo-day.png in Resources */,
 				6F584B331B44BD37007B9D54 /* Images.xcassets in Resources */,
